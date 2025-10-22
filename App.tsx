@@ -11,8 +11,7 @@ import Pricing from './components/Pricing';
 import Faq from './components/Faq';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import CosmeticBrandLaunch from './components/portfolio/CosmeticBrandLaunch';
-import FutureNetSolutions from './components/websites/FutureNetSolutions';
+import ElegantJohn from './components/websites/ElegantJohn';
 import WhoWeAre from './components/WhoWeAre';
 import WhatWeDo from './components/WhatWeDo';
 import '@fontsource/poppins/300.css';
@@ -105,7 +104,7 @@ const App: React.FC = () => {
       <main>
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/websites/corporate-site" element={<FutureNetSolutions />} />
+          <Route path="/websites/elegant-john" element={<ElegantJohn />} />
         </Routes>
       </main>
       <Footer />

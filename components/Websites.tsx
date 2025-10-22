@@ -13,7 +13,7 @@ interface WebsiteItemProps {
 const WebsiteItem: React.FC<WebsiteItemProps> = ({ imageUrl, category, title, onClick }) => (
   <button 
     onClick={onClick}
-    className="group relative overflow-hidden rounded-lg shadow-lg w-full text-left cursor-pointer block focus:outline-none focus:ring-4 focus:ring-sky-500/50 focus:ring-offset-2 focus:ring-offset-slate-900"
+    className="group relative overflow-hidden rounded-lg shadow-lg w-full h-full text-left cursor-pointer block focus:outline-none focus:ring-4 focus:ring-sky-500/50 focus:ring-offset-2 focus:ring-offset-slate-900"
   >
     <img src={imageUrl} alt={title} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out" />
     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent transition-all duration-300"></div>
@@ -27,7 +27,7 @@ const WebsiteItem: React.FC<WebsiteItemProps> = ({ imageUrl, category, title, on
 );
 
 const websitesData = [
-  { id: 'corporate-site', imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop', category: 'Corporate', title: 'FutureNet Solutions' },
+  { id: 'elegant-john', imageUrl: '../assets/elegant-john.jpg', category: 'Website & Marketing', title: 'Elegant John Bathrooms' },
   { id: 'portfolio-site', imageUrl: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2072&auto=format&fit=crop', category: 'Creative Portfolio', title: 'Elena\'s Artistry' },
   { id: 'landing-page', imageUrl: 'https://images.unsplash.com/photo-1559028006-44d5a217208d?q=80&w=1935&auto=format&fit=crop', category: 'SaaS Landing Page', title: 'InnovateAI Platform' },
   { id: 'blog-site', imageUrl: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop', category: 'Blog & Content Hub', title: 'Wanderlust Chronicles' },
@@ -40,7 +40,7 @@ const Websites: React.FC = () => {
   const navigate = useNavigate();
 
   const handleSelectWebsite = (websiteId: string) => {
-    if (websiteId === 'corporate-site') {
+    if (websiteId === 'elegant-john') {
       navigate(`/websites/${websiteId}`);
     } else {
       alert('Case study coming soon!');

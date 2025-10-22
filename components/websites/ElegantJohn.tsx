@@ -3,6 +3,10 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeftIcon } from '../ui/Icons';
 
+interface ElegantJohnProps {
+  onBack: () => void;
+}
+
 const MetricCard: React.FC<{ value: string, label: string }> = ({ value, label }) => (
     <div className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-lg text-center">
         <p className="text-4xl lg:text-5xl font-bold text-sky-400">{value}</p>
@@ -10,7 +14,7 @@ const MetricCard: React.FC<{ value: string, label: string }> = ({ value, label }
     </div>
 );
 
-const CosmeticBrandLaunch: React.FC = () => {
+const ElegantJohn: React.FC = () => {
   const navigate = useNavigate();
   return (
     <div className="bg-slate-900 text-white animate-fade-in">
@@ -27,8 +31,8 @@ const CosmeticBrandLaunch: React.FC = () => {
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=1887&auto=format&fit=crop"
-            alt="Cosmetic products arranged beautifully"
+            src="../assets/elegant-john.jpg"
+            alt="Modern corporate office with computers"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent"></div>
@@ -36,11 +40,11 @@ const CosmeticBrandLaunch: React.FC = () => {
         <div className="relative z-10 px-6 container mx-auto">
             <button onClick={() => navigate('/')} className="absolute top-0 left-6 md:left-0 flex items-center gap-2 text-gray-300 hover:text-white transition-colors text-lg font-semibold">
                 <ArrowLeftIcon className="w-6 h-6" />
-                Back to Portfolio
+                Back to Main Site
             </button>
-            <p className="text-sky-400 font-bold uppercase tracking-widest">E-commerce Success Story</p>
+            <p className="text-sky-400 font-bold uppercase tracking-widest">Website & Marketing</p>
             <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mt-4 mb-4 tracking-tighter">
-                Cosmetic Brand Launch
+                Elegant John Bathrooms
             </h1>
         </div>
       </section>
@@ -49,9 +53,9 @@ const CosmeticBrandLaunch: React.FC = () => {
         {/* Metrics Section */}
         <section className="-mt-32 lg:-mt-40 relative z-20">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                <MetricCard value="+300%" label="Sales Increase in 3 Months" />
-                <MetricCard value="+1.2M" label="Impressions on Social" />
-                <MetricCard value="50K" label="New Email Subscribers" />
+                <MetricCard value="98/100" label="Lighthouse Score" />
+                <MetricCard value="+150%" label="Qualified Lead Generation" />
+                <MetricCard value="-40%" label="Bounce Rate Reduction" />
             </div>
         </section>
 
@@ -61,14 +65,14 @@ const CosmeticBrandLaunch: React.FC = () => {
                 <div className="md:col-span-1">
                     <h2 className="text-2xl font-bold text-sky-400 mb-4">Project Overview</h2>
                     <ul className="space-y-3 text-gray-300">
-                        <li><strong>Client:</strong> Serene Beauty</li>
-                        <li><strong>Industry:</strong> Cosmetics</li>
-                        <li><strong>Timeline:</strong> 4 Months</li>
+                        <li><strong>Client:</strong> FutureNet Solutions</li>
+                        <li><strong>Industry:</strong> Enterprise Technology</li>
+                        <li><strong>Timeline:</strong> 3 Months</li>
                         <li><strong>Services:</strong>
                             <ul className="list-disc list-inside ml-4 text-gray-400">
-                                <li>E-commerce Website</li>
-                                <li>Social Media Campaign</li>
-                                <li>Email Marketing</li>
+                                <li>Web Design & Development</li>
+                                <li>Custom CMS</li>
+                                <li>SEO Integration</li>
                             </ul>
                         </li>
                     </ul>
@@ -77,13 +81,13 @@ const CosmeticBrandLaunch: React.FC = () => {
                     <div>
                         <h3 className="text-2xl font-bold text-white mb-3">The Challenge</h3>
                         <p className="text-gray-400 leading-relaxed">
-                            Serene Beauty, a new player in the crowded cosmetics market, needed to launch their brand with a strong digital presence. They required a high-converting e-commerce site and a multi-channel marketing strategy to build brand awareness and drive initial sales from scratch.
+                            FutureNet's existing website was outdated, slow, and difficult to navigate, especially on mobile devices. It failed to reflect their status as a modern tech leader and was underperforming in generating qualified leads.
                         </p>
                     </div>
                     <div className="mt-8">
                         <h3 className="text-2xl font-bold text-white mb-3">Our Solution</h3>
                         <p className="text-gray-400 leading-relaxed">
-                            We developed a visually stunning, mobile-first Shopify e-commerce store optimized for conversions. The site highlighted the product's unique selling points through beautiful imagery and compelling copy. Simultaneously, we launched an integrated marketing campaign across Instagram and TikTok, using influencer partnerships and targeted ads to reach the ideal customer demographic. An email marketing funnel was set up to capture leads and nurture them into loyal customers, resulting in a highly successful launch that exceeded all initial KPIs.
+                            We executed a complete overhaul, building a sleek, professional website on a modern tech stack. The new design is fully responsive and optimized for lightning-fast performance. We developed a user-friendly custom CMS, empowering the FutureNet team to manage content effortlessly. Strategic placement of calls-to-action and optimized contact forms led to a significant increase in lead capture.
                         </p>
                     </div>
                 </div>
@@ -94,4 +98,4 @@ const CosmeticBrandLaunch: React.FC = () => {
   );
 };
 
-export default CosmeticBrandLaunch;
+export default ElegantJohn;
