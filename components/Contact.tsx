@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { FormEvent, useState } from "react";
 import { useScrollAnimation } from "./ui/Card";
 
 const Contact: React.FC = () => {
@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.2 });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event : FormEvent) => {
     event.preventDefault();
     setIsSubmitting(true);
 
