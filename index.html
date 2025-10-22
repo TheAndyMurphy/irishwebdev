@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IRISHWEB.DEV</title>
+    <style>
+      /* For smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Reveal on scroll animation */
+      .scroll-animate {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s cubic-bezier(0.17, 0.55, 0.55, 1), transform 0.8s cubic-bezier(0.17, 0.55, 0.55, 1);
+      }
+      .scroll-animate.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      /* Animated Neon Borders */
+      .section-bordered {
+        position: relative;
+      }
+      .section-bordered::before,
+      .section-bordered::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, #81adf8, #2dd4bf, #5563f7, #81adf8);
+        background-size: 200% auto;
+        animation: animated-gradient 8s linear infinite;
+        box-shadow: 0 0 4px rgba(129, 140, 248, 0.6), 0 0 8px rgba(45, 212, 191, 0.4);
+      }
+      .section-bordered::before {
+        top: 0;
+      }
+      .section-bordered::after {
+        bottom: 0;
+      }
+
+      @keyframes animated-gradient {
+        to {
+          background-position: -200% center;
+        }
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^6.25.1",
+    "react-router-dom/": "https://aistudiocdn.com/react-router-dom@^6.25.1/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.0.4",
+    "vite": "https://aistudiocdn.com/vite@^7.1.11"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-900 text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
