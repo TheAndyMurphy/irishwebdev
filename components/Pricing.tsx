@@ -149,7 +149,7 @@ const Pricing: React.FC<PricingProps> = ({ onContactClick }) => {
         <div className="mt-20">
             <div className={`relative max-w-4xl mx-auto bg-slate-800 rounded-lg shadow-lg p-8 md:p-12 text-center overflow-hidden scroll-animate ${isVisible ? 'is-visible' : ''}`} style={{ transitionDelay: '900ms' }}>
                 <div className="absolute -top-10 -right-10 w-40 h-40 bg-sky-500/20 rounded-lg filter blur-3xl"></div>
-                <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-teal-500/20 rounded-lg filter blur-3xl"></div>
+                <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-500/20 rounded-lg filter blur-3xl"></div>
                 <div className="relative z-10">
                     <SparklesIcon className="w-12 h-12 mx-auto text-sky-400 mb-4" />
                     <h3 className="text-3xl font-bold text-white mb-2">Bespoke</h3>

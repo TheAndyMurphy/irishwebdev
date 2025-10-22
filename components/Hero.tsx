@@ -27,13 +27,13 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
         <ParticleBackground />
         <div className="absolute inset-0 -z-10">
            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-sky-500 rounded-lg mix-blend-screen filter blur-3xl opacity-20 animate-blob"></div>
-           <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-teal-500 rounded-lg mix-blend-screen filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+           <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-blue-500 rounded-lg mix-blend-screen filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
            <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-purple-500 rounded-lg mix-blend-screen filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
         </div>
         <div className="relative z-10 px-10">
           <h1 className="text-4xl md:text-7xl font-extrabold text-white leading-tight mb-4 tracking-tighter">
             Build Your Brand <br/> 
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-teal-400">With Data-Driven Results</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-blue-500">With Data-Driven Results</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8">
             Learn your customers, optimize your marketing, style your brand and grow your business or... let us do it for you!

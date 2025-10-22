@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({ onServicesClick, onPortfolioClick, onPr
   };
 
   const NavLink: React.FC<{onClick: () => void, children: React.ReactNode}> = ({ onClick, children }) => (
-    <a onClick={onClick} className="relative group cursor-pointer text-gray-300 hover:text-white transition-colors duration-300 py-2">
+    <a onClick={onClick} className="relative group cursor-pointer text-gray-300 hover:text-white transition-colors duration-300 py-2 font-bold">
       <span className="relative z-10">{children}</span>
       <span className="absolute bottom-0 left-0 w-full h-[2px] bg-sky-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-center"></span>
     </a>
@@ -88,7 +88,7 @@ const Header: React.FC<HeaderProps> = ({ onServicesClick, onPortfolioClick, onPr
             <MobileNavLink onClick={onPortfolioClick}>Portfolio</MobileNavLink>
             <MobileNavLink onClick={onPricingClick}>Pricing</MobileNavLink>
             <MobileNavLink onClick={onFaqClick}>FAQs</MobileNavLink>
-            <a onClick={() => handleMobileLinkClick(onContactClick)} className="mt-4 text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-teal-400 hover:opacity-80 transition-opacity">
+            <a onClick={() => handleMobileLinkClick(onContactClick)} className="mt-4 text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-blue-500 hover:opacity-80 transition-opacity">
               Contact Us
             </a>
         </nav>

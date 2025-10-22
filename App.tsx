@@ -14,7 +14,7 @@ import Footer from './components/Footer';
 import ElegantJohn from './components/websites/ElegantJohn';
 import WhoWeAre from './components/WhoWeAre';
 import WhatWeDo from './components/WhatWeDo';
-import '@fontsource/poppins/300.css';
+import '@fontsource/poppins/200.css';
 import '@fontsource/poppins/700.css';
 
 const App: React.FC = () => {
