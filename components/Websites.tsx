@@ -51,7 +51,7 @@ const Websites: React.FC = () => {
     <section ref={ref} className="py-20 lg:py-28 bg-slate-800 section-bordered">
       <div className="container mx-auto px-6">
         <div className={`text-left md:text-center mb-12 scroll-animate ${isVisible ? 'is-visible' : ''}`}>
-          <h2 className="text-4xl font-bold text-white mb-4">Our Projects</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Our Portfolio</h2>
           <p className="text-lg text-gray-400">A collection of websites we've proudly designed and developed.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

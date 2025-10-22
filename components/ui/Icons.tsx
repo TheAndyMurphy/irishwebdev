@@ -21,9 +21,9 @@ export const AnimatedMenuIcon: React.FC<AnimatedMenuIconProps> = ({ isOpen, onCl
       onClick={onClick}
       aria-label={isOpen ? "Close menu" : "Open menu"}
     >
-      <div className={`${genericHamburgerLine} ${isOpen ? "rotate-45  translate-y-[8px]" : ""}`} />
+      <div className={`${genericHamburgerLine} ${isOpen ? "rotate-45  translate-y-[10px]" : ""}`} />
       <div className={`${genericHamburgerLine} ${isOpen ? "opacity-0" : ""}`} />
-      <div className={`${genericHamburgerLine} ${isOpen ? " -rotate-45  -translate-y-[9px]" : ""}`} />
+      <div className={`${genericHamburgerLine} ${isOpen ? " -rotate-45  -translate-y-[10px]" : ""}`} />
     </button>
   );
 };

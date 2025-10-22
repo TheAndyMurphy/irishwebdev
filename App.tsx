@@ -77,7 +77,7 @@ const App: React.FC = () => {
         <About />
       </div>
     
-      <div>
+      <div ref={portfolioRef}>
         <Websites />
       </div>
       <div ref={pricingRef}>

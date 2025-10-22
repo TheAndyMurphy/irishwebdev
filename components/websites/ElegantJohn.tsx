@@ -37,15 +37,16 @@ const ElegantJohn: React.FC = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent"></div>
         </div>
-        <div className="relative z-10 px-6 container mx-auto">
-            <button onClick={() => navigate('/')} className="absolute top-0 left-6 md:left-0 flex items-center gap-2 text-gray-300 hover:text-white transition-colors text-lg font-semibold">
-                <ArrowLeftIcon className="w-6 h-6" />
-                Back to Main Site
-            </button>
+        <div className="relative z-10 px-6 container mx-auto h-full grid content-center">
+            
             <p className="text-sky-400 font-bold uppercase tracking-widest">Website & Marketing</p>
             <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mt-4 mb-4 tracking-tighter">
                 Elegant John Bathrooms
             </h1>
+            <button onClick={() => navigate('/')} className="justify-center mt-12 flex items-center gap-2 text-gray-300 hover:text-white transition-colors text-lg font-semibold">
+                <ArrowLeftIcon className="w-6 h-6" />
+                Back to Homepage
+            </button>
         </div>
       </section>
 
@@ -53,9 +54,9 @@ const ElegantJohn: React.FC = () => {
         {/* Metrics Section */}
         <section className="-mt-32 lg:-mt-40 relative z-20">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                <MetricCard value="98/100" label="Lighthouse Score" />
+                <MetricCard value="99/100" label="Lighthouse Score" />
                 <MetricCard value="+150%" label="Qualified Lead Generation" />
-                <MetricCard value="-40%" label="Bounce Rate Reduction" />
+                <MetricCard value="+200%" label="Sales Conversions" />
             </div>
         </section>
 
@@ -65,14 +66,22 @@ const ElegantJohn: React.FC = () => {
                 <div className="md:col-span-1">
                     <h2 className="text-2xl font-bold text-sky-400 mb-4">Project Overview</h2>
                     <ul className="space-y-3 text-gray-300">
-                        <li><strong>Client:</strong> FutureNet Solutions</li>
-                        <li><strong>Industry:</strong> Enterprise Technology</li>
-                        <li><strong>Timeline:</strong> 3 Months</li>
-                        <li><strong>Services:</strong>
-                            <ul className="list-disc list-inside ml-4 text-gray-400">
+                        <li><strong>Client:</strong> Elegant John Bathrooms</li>
+                        <li><strong>Industry:</strong> Home Improvement</li>
+                        <li><strong>Timeline:</strong> 6 Months</li>
+                        <li><strong>Key Services:</strong>
+                            <ul className="grid gap-2 list-disc list-inside ml-4 mt-4 text-gray-400">
                                 <li>Web Design & Development</li>
-                                <li>Custom CMS</li>
-                                <li>SEO Integration</li>
+                                <li>Bespoke CMS</li>
+                                <li>SEO Optimisation</li>
+                                <li>Logo Design</li>
+                                <li>Print Material</li>
+                                <li>Social Media Management</li>
+                                <li>Google / Meta / TikTok Ads</li>
+
+                                
+
+
                             </ul>
                         </li>
                     </ul>
@@ -81,13 +90,13 @@ const ElegantJohn: React.FC = () => {
                     <div>
                         <h3 className="text-2xl font-bold text-white mb-3">The Challenge</h3>
                         <p className="text-gray-400 leading-relaxed">
-                            FutureNet's existing website was outdated, slow, and difficult to navigate, especially on mobile devices. It failed to reflect their status as a modern tech leader and was underperforming in generating qualified leads.
+                            Elegant John Bathrooms came to us with an initial idea of a website update with a modern CMS to allow for staff to edit the website directly. Their logo was outdated and their leads from the website were low, they relied heavily on socials with Google Ads also under performing.
                         </p>
                     </div>
                     <div className="mt-8">
                         <h3 className="text-2xl font-bold text-white mb-3">Our Solution</h3>
                         <p className="text-gray-400 leading-relaxed">
-                            We executed a complete overhaul, building a sleek, professional website on a modern tech stack. The new design is fully responsive and optimized for lightning-fast performance. We developed a user-friendly custom CMS, empowering the FutureNet team to manage content effortlessly. Strategic placement of calls-to-action and optimized contact forms led to a significant increase in lead capture.
+                            We created a new logo, a new website design with a restructured sitemap and targeted keywords to improve overall SEO. Upon completion we added advanced analytics so we could begin tracking the ads, keywords and social avenues that were performing vs those that weren't so we could be more targeted in our approach. After 3 months, lead gen was up significantly and bathroom projects booked had doubled.
                         </p>
                     </div>
                 </div>
