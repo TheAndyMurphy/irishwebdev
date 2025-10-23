@@ -114,7 +114,7 @@ const Pricing: React.FC<PricingProps> = ({ onContactClick }) => {
       <div className="container mx-auto px-10">
         <div className={`max-w-4xl mx-auto text-left md:text-center mb-20 scroll-animate ${isVisible ? 'is-visible' : ''}`}>
           <h2 className="text-4xl font-bold text-white mb-4">How Much Will It Cost Me?</h2>
-          <p className="text-lg text-gray-400">Ah yes, FAQ number 1 and the answer is always going to be it depends. Some results are tangible, a new website, a brochure, a logo or a promotional video. With marketing you have to think of it as an investment, the money you put in directly correlates with the reward you'll to get out of it. <br/><br/><span className="text-sky-300">Our job is to mitigate the risk and maximise your profit.</span></p>
+          <p className="text-lg text-gray-400">Ah yes, FAQ number 1 and the answer is always going to be it depends. Some results are tangible, a new website, a brochure, a logo or a promotional video. With marketing you have to think of it as an investment, the money you put in directly correlates with the reward you'll get out of it. <br/><br/><span className="text-sky-300">Our job is to mitigate the risk and maximise your profit.</span></p>
         </div>
 
         {/* Marketing Packages */}
