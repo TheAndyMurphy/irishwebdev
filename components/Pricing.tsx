@@ -27,7 +27,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, price, description, fea
       </div>
     )}
     <h3 className="text-2xl font-bold text-white mb-2">{plan}</h3>
-    <p className="text-gray-400 mb-6">{description}</p>
+    <p className="text-gray-300 mb-6">{description}</p>
     <p className="text-4xl font-extrabold text-white mb-6">{price}</p>
     <ul className="space-y-4 text-gray-300 mb-8 flex-grow">
       {features.map((feature, index) => (
@@ -114,13 +114,13 @@ const Pricing: React.FC<PricingProps> = ({ onContactClick }) => {
       <div className="container mx-auto px-10">
         <div className={`max-w-4xl mx-auto text-left md:text-center mb-20 scroll-animate ${isVisible ? 'is-visible' : ''}`}>
           <h2 className="text-4xl font-bold text-white mb-4">How Much Will It Cost Me?</h2>
-          <p className="text-lg text-gray-400">Ah yes, FAQ number 1 and the answer is always going to be it depends. Some results are tangible, a new website, a brochure, a logo or a promotional video. With marketing you have to think of it as an investment, the money you put in directly correlates with the reward you'll get out of it. <br/><br/><span className="text-sky-300">Our job is to mitigate the risk and maximise your profit.</span></p>
+          <p className="text-lg text-gray-300">Ah yes, FAQ number 1 and the answer is always going to be it depends. Some results are tangible, a new website, a brochure, a logo or a promotional video. With marketing you have to think of it as an investment, the money you put in directly correlates with the reward you'll get out of it. <br/><br/><span className="text-sky-300">Our job is to mitigate the risk and maximise your profit.</span></p>
         </div>
 
         {/* Marketing Packages */}
         <div className="mb-32">
             <h3 className={`text-3xl font-bold text-left md:text-center text-white mb-2 scroll-animate ${isVisible ? 'is-visible' : ''}`} style={{ transitionDelay: '100ms' }}>Marketing Packages</h3>
-          <p className="mx-auto max-w-5xl text-left md:text-center text-lg  mb-16 text-gray-400"><span className=" text-sm text-sky-300">Prices below exclude your monthly advertising cost which is entirely at your discretion.</span></p>
+          <p className="mx-auto max-w-5xl text-left md:text-center text-lg  mb-16 text-gray-300"><span className=" text-sm text-sky-300">Prices below exclude your monthly advertising cost which is entirely at your discretion.</span></p>
            
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8 max-w-6xl mx-auto items-stretch">
             {marketingPackages.map((pkg, index) => (
@@ -134,7 +134,7 @@ const Pricing: React.FC<PricingProps> = ({ onContactClick }) => {
         {/* Web Development Packages */}
         <div className="mb-12">
             <h3 className={`text-3xl font-bold text-left md:text-center text-white mb-4 scroll-animate ${isVisible ? 'is-visible' : ''}`} style={{ transitionDelay: '500ms' }}>Web Development Packages</h3>
-          <p className="mx-auto max-w-5xl text-left md:text-center text-lg  mb-16 text-gray-400"><span className=" text-sm text-sky-300">Prices below give you an estimate based on your requirements. Each package can be tailored to your needs.</span></p>
+          <p className="mx-auto max-w-5xl text-left md:text-center text-lg  mb-16 text-gray-300"><span className=" text-sm text-sky-300">Prices below give you an estimate based on your requirements. Each package can be tailored to your needs.</span></p>
            
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8 max-w-6xl mx-auto items-stretch">
             {webDevPackages.map((pkg, index) => (
@@ -168,7 +168,7 @@ const Pricing: React.FC<PricingProps> = ({ onContactClick }) => {
 
         {/* Footnote */}
         <div className={`text-center mt-16 scroll-animate ${isVisible ? 'is-visible' : ''}`} style={{ transitionDelay: '1000ms' }}>
-          <p className="text-sm text-gray-400 max-w-4xl mx-auto">
+          <p className="text-sm text-gray-300 max-w-4xl mx-auto">
             Monthly retainers start at €250/month for essential maintenance and upgrades with a report of work completed. Analytics and reporting start at €500/month. If no contract is drawn up for monthly retainers, any updates and maintenance required will be charged at a daily rate which is subject to change.
           </p>
         </div>

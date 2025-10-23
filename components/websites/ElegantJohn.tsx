@@ -71,7 +71,7 @@ const ElegantJohn: React.FC = () => {
                         <li><strong>Industry:</strong> Bathroom Remodellers</li>
                         <li><strong>Initial Timeline:</strong> 6 Months</li>
                         <li><strong>Key Services:</strong>
-                            <ul className="grid gap-2 list-disc list-inside ml-4 mt-4 text-gray-400">
+                            <ul className="grid gap-2 list-disc list-inside ml-4 mt-4 text-gray-300">
                                 <li>Web Design & Development</li>
                                 <li>Bespoke CMS</li>
                                 <li>SEO Optimisation</li>
@@ -90,14 +90,14 @@ const ElegantJohn: React.FC = () => {
                 <div className="md:col-span-2">
                     <div>
                         <h3 className="text-2xl font-bold text-white mb-3">The Challenge</h3>
-                        <p className="text-gray-400 leading-relaxed">
+                        <p className="text-gray-300 leading-relaxed">
                             Elegant John Bathrooms came to us with an initial idea of a website update with a modern CMS to allow for staff to edit the website directly. Their logo was outdated and their leads from the website were low, they relied heavily on socials with Google Ads also under performing.
                         </p>
                     </div>
                     <div className="mt-8">
                         <h3 className="text-2xl font-bold text-white mb-3">Our Solution</h3>
-                        <p className="text-gray-400 leading-relaxed">
-                            We created a new logo, a new website design with a restructured sitemap and targeted keywords to improve overall SEO. Upon completion we added advanced analytics so we could begin tracking the ads, keywords and social avenues that were performing vs those that weren't so we could be more targeted in our approach. After 3 months, lead gen was up significantly and bathroom projects booked had doubled.
+                        <p className="text-gray-300 leading-relaxed">
+                            We created a new logo, a new website design with a restructured sitemap and targeted keywords to improve overall SEO. Upon completion we added advanced analytics so we could begin tracking the ads, keywords and social avenues that were performing vs those that weren't so we could be more targeted in our approach. After 4 months, lead gen was up significantly and bathroom projects booked had doubled.
                         </p>
                     </div>
                       <div className="mt-8">

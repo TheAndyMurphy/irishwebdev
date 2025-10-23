@@ -18,7 +18,7 @@ const CursorFollower: React.FC<CursorFollowerProps> = ({ x, y, isVisible }) => {
   return (
     <div
       style={style}
-      className="fixed w-8 h-8 rounded-lg border-2 border-sky-400 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-50 shadow-[0_0_15px_rgba(99,102,241,0.6),_0_0_25px_rgba(129,140,248,0.4)]"
+      className="fixed w-6 h-6 rounded-full border-2 border-sky-400 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-50 shadow-[0_0_15px_rgba(99,102,241,0.6),_0_0_25px_rgba(129,140,248,0.4)]"
     />
   );
 };

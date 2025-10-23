@@ -50,7 +50,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ question, answer, isOpen,
         className={`grid transition-all duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
       >
         <div className="overflow-hidden">
-          <p className="pt-4 pb-6 text-gray-400 pl-4 pr-10">
+          <p className="pt-4 pb-6 text-gray-300 pl-4 pr-10">
             {answer}
           </p>
         </div>
@@ -73,7 +73,7 @@ const Faq: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className={`text-center mb-12 scroll-animate ${isVisible ? 'is-visible' : ''}`}>
           <h2 className="text-4xl font-bold text-white mb-4">Frequently Asked Questions</h2>
-          <p className="text-lg text-gray-400">Can't find the answer you're looking for? Reach out to us.</p>
+          <p className="text-lg text-gray-300">Can't find the answer you're looking for? Reach out to us.</p>
         </div>
         <div className="max-w-3xl mx-auto">
           {faqData.map((faq, index) => (

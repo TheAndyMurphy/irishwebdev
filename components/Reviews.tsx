@@ -45,7 +45,7 @@ const Reviews: React.FC = () => {
           <h2 className="text-4xl font-bold text-white mb-4">
             What Our Clients Say
           </h2>
-          <p className="text-lg text-gray-400">
+          <p className="text-lg text-gray-300">
             Hear the real stories from businesses we've helped and are still helping to succeed.
           </p>
         </div>
@@ -89,7 +89,7 @@ const Reviews: React.FC = () => {
                   />
                   <div>
                     <p className="font-bold text-white">{review.name}</p>
-                    <p className="text-sm text-gray-400">{review.title}</p>
+                    <p className="text-sm text-gray-300">{review.title}</p>
                   </div>
                 </div>
               </div>

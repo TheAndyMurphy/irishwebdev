@@ -71,7 +71,7 @@ const ColinMaher
                         <li><strong>Industry:</strong> Bespoke Kitchens & Furniture</li>
                         <li><strong>Initial Timeline:</strong> 3 Months</li>
                         <li><strong>Key Services:</strong>
-                            <ul className="grid gap-2 list-disc list-inside ml-4 mt-4 text-gray-400">
+                            <ul className="grid gap-2 list-disc list-inside ml-4 mt-4 text-gray-300">
                                 <li>Web Design & Development</li>
                                 <li>Bespoke CMS</li>
                                 <li>SEO Optimisation</li>
@@ -83,13 +83,13 @@ const ColinMaher
                 <div className="md:col-span-2">
                     <div>
                         <h3 className="text-2xl font-bold text-white mb-3">The Challenge</h3>
-                        <p className="text-gray-400 leading-relaxed">
+                        <p className="text-gray-300 leading-relaxed">
                             Colin Maher Design came to us with a thriving kitchen fitting business, however they were now looking to shift focus to appliance sales to help increase profit margins. They also wanted some more granular data around where the best avenue to run their marketing campaigns would be and an updated website to maximise the user experience and increase lead generation.
                         </p>
                     </div>
                     <div className="mt-8">
                         <h3 className="text-2xl font-bold text-white mb-3">Our Solution</h3>
-                        <p className="text-gray-400 leading-relaxed">
+                        <p className="text-gray-300 leading-relaxed">
                             We started with the new website and like most of our projects we included a bespoke CMS for maximum staff customisation. We restructured the site to focus on getting more form submissions and be as transparent up front with the user about their process. We added a new apliances section that allowed for seasonal promo content to correspond with Google Ads. We targeted Google Ads and Meta initially for appliance sales which were boosted massively in the process and then fine tuned it to solely Google Ads as Meta converted significantly less vs spend. This was mainly due to the higher user intent in Google Searches leading to significantly better conversions.
                         </p>
                     </div>

@@ -10,13 +10,13 @@ const Footer: React.FC = () => {
           <WebDevSVG className="h-6 w-6 text-sky-400" />
           <span className="text-lg font-bold text-white">IRISHWEB.DEV</span>
         </div>
-        <p className="text-gray-400 text-sm mb-4 md:mb-0">
+        <p className="text-gray-300 text-sm mb-4 md:mb-0">
           &copy; {new Date().getFullYear()} IRISHWEB.DEV. All rights reserved.
         </p>
         {/* <div className="flex space-x-4">
-          <a href="#" className="text-gray-400 hover:text-white transition-colors"><TwitterIcon className="h-6 w-6" /></a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors"><LinkedInIcon className="h-6 w-6" /></a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors"><GitHubIcon className="h-6 w-6" /></a>
+          <a href="#" className="text-gray-300 hover:text-white transition-colors"><TwitterIcon className="h-6 w-6" /></a>
+          <a href="#" className="text-gray-300 hover:text-white transition-colors"><LinkedInIcon className="h-6 w-6" /></a>
+          <a href="#" className="text-gray-300 hover:text-white transition-colors"><GitHubIcon className="h-6 w-6" /></a>
         </div> */}
       </div>
     </footer>

@@ -5,7 +5,7 @@ import { useScrollAnimation } from './ui/Card';
 const StatItem: React.FC<{ value: string; label: string }> = ({ value, label }) => (
   <div className="text-center">
     <p className="text-4xl font-bold text-sky-400">{value}</p>
-    <p className="text-gray-400">{label}</p>
+    <p className="text-gray-300">{label}</p>
   </div>
 );
 

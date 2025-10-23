@@ -72,7 +72,7 @@ const LeisureTraining
                         <li><strong>Industry:</strong> Safety Training</li>
                         <li><strong>Initial Timeline:</strong> 3 Months</li>
                         <li><strong>Key Services:</strong>
-                            <ul className="grid gap-2 list-disc list-inside ml-4 mt-4 text-gray-400">
+                            <ul className="grid gap-2 list-disc list-inside ml-4 mt-4 text-gray-300">
                                 <li>Web Design & Development</li>
                                 <li>Bespoke CMS</li>
                                 <li>SEO Optimisation</li>
@@ -85,13 +85,13 @@ const LeisureTraining
                 <div className="md:col-span-2">
                     <div>
                         <h3 className="text-2xl font-bold text-white mb-3">The Challenge</h3>
-                        <p className="text-gray-400 leading-relaxed">
+                        <p className="text-gray-300 leading-relaxed">
                             Leisure Training Ireland needed a website built from scratch with a CMS for editable content that staff could access. Evenetually, this was linked up to a course booking system. They also required print material such as business cards, flyers, roller banners and booklets. They had no socials setup and had a reputation to build.
                         </p>
                     </div>
                     <div className="mt-8">
                         <h3 className="text-2xl font-bold text-white mb-3">Our Solution</h3>
-                        <p className="text-gray-400 leading-relaxed">
+                        <p className="text-gray-300 leading-relaxed">
                             We built a shiny new website hooked up to a bespoke CMS and a third party booking platform. We set up their social accounts and created review cards to increase Google Reviews to help boost SEO and trust rankings rapidly. Occasional print material was also supplied for specific events and marketing pushes.
                         </p>
                     </div>

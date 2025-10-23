@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
           <h2 className="text-4xl font-bold text-white mb-4">
             Let's Get Started
           </h2>
-          <p className="text-lg text-gray-400">
+          <p className="text-lg text-gray-300">
             Have a project in mind? We'd love to hear about it.
           </p>
         </div>
@@ -212,7 +212,7 @@ const Contact: React.FC = () => {
                     </option>
                   ))}
                 </select>
-                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-300">
                   <svg
                     className="h-5 w-5"
                     viewBox="0 0 20 20"

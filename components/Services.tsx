@@ -54,7 +54,7 @@ const Services: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className={`text-left md:text-center mb-12 scroll-animate ${isVisible ? 'is-visible' : ''}`}>
           <h2 className="text-4xl font-bold text-white mb-4">Our Core Services</h2>
-          <p className="text-lg text-gray-400">We can provide the tools and services to help your business grow.</p>
+          <p className="text-lg text-gray-300">We can provide the tools and services to help your business grow.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {servicesData.map((service, index) => (
@@ -62,7 +62,7 @@ const Services: React.FC = () => {
               <Card>
                 {service.icon}
                 <h3 className="text-xl font-bold mb-2 text-white">{service.title}</h3>
-                <p className="text-gray-400">{service.description}</p>
+                <p className="text-gray-300">{service.description}</p>
               </Card>
             </div>
           ))}
