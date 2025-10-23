@@ -37,7 +37,6 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ onViewWorkClick }) => {
               alt="A creative team collaborating in a modern office" 
               className="rounded-lg shadow-2xl object-cover w-full h-full aspect-[4/3]"
             />
-            <figcaption className="opacity-50 text-xs p-4 bg-black rounded">Image source Unsplash as we don't yet have our own studio</figcaption>
             </figure>
           </div>
         </div>

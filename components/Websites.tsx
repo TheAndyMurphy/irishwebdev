@@ -27,12 +27,9 @@ const WebsiteItem: React.FC<WebsiteItemProps> = ({ imageUrl, category, title, on
 );
 
 const websitesData = [
-  { id: 'elegant-john', imageUrl: '../assets/elegant-john.jpg', category: 'Website & Marketing', title: 'Elegant John Bathrooms' },
-  { id: 'portfolio-site', imageUrl: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2072&auto=format&fit=crop', category: 'Creative Portfolio', title: 'Elena\'s Artistry' },
-  { id: 'landing-page', imageUrl: 'https://images.unsplash.com/photo-1559028006-44d5a217208d?q=80&w=1935&auto=format&fit=crop', category: 'SaaS Landing Page', title: 'InnovateAI Platform' },
-  { id: 'blog-site', imageUrl: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop', category: 'Blog & Content Hub', title: 'Wanderlust Chronicles' },
-  { id: 'non-profit', imageUrl: 'https://images.unsplash.com/photo-1617802690992-1587596e8748?q=80&w=2070&auto=format&fit=crop', category: 'Non-Profit', title: 'Green Earth Initiative' },
-  { id: 'restaurant-site', imageUrl: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1974&auto=format&fit=crop', category: 'Restaurant', title: 'The Gilded Spoon' }
+  { id: 'elegant-john', imageUrl: '../assets/ej.avif', category: 'Website & Marketing', title: 'Elegant John Bathrooms' },
+  { id: 'leisure-training', imageUrl: '../assets/lti.webp', category: 'Website & Marketing', title: 'Leisure Training Ireland' },
+  { id: 'colin-maher', imageUrl: '../assets/cmd.webp', category: 'Website & Marketing', title: 'Colin Maher Design' },
 ];
 
 const Websites: React.FC = () => {
@@ -40,7 +37,7 @@ const Websites: React.FC = () => {
   const navigate = useNavigate();
 
   const handleSelectWebsite = (websiteId: string) => {
-    if (websiteId === 'elegant-john') {
+    if (websiteId) {
       navigate(`/websites/${websiteId}`);
     } else {
       alert('Case study coming soon!');
@@ -52,7 +49,7 @@ const Websites: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className={`text-left md:text-center mb-12 scroll-animate ${isVisible ? 'is-visible' : ''}`}>
           <h2 className="text-4xl font-bold text-white mb-4">Our Portfolio</h2>
-          <p className="text-lg text-gray-400">A collection of websites we've proudly designed and developed.</p>
+          <p className="text-lg text-gray-400">Check out a collection of our featured projects here. Don't worry we'll be adding more soon...</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {websitesData.map((item, index) => (

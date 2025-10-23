@@ -81,13 +81,13 @@ const Header: React.FC<HeaderProps> = ({
     >
       <nav className="container mx-auto px-6 h-[4.5rem] flex justify-between items-center">
         <button
-          className="flex text-2xl font-bold  items-center space-x-2 cursor-pointer text-white"
+          className="flex text-2xl font-bold gap-1 items-center space-x-2 cursor-pointer text-white"
           onClick={() => {
             navigate("/");
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
-        >
-          IRISHWEB<span className="text-sky-300">.DEV</span>
+        ><WebDevSVG className="h-6 w-6 text-sky-400" />
+          <div>IRISHWEB<span className="text-sky-300">.DEV</span></div>
         </button>
 
         <div className="hidden md:flex items-center space-x-8">
@@ -99,7 +99,7 @@ const Header: React.FC<HeaderProps> = ({
             onClick={onContactClick}
             className="cursor-pointer bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
           >
-            Contact Us
+            Get Started
           </a>
         </div>
 

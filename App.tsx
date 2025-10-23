@@ -16,6 +16,8 @@ import WhoWeAre from './components/WhoWeAre';
 import WhatWeDo from './components/WhatWeDo';
 import '@fontsource/poppins/200.css';
 import '@fontsource/poppins/700.css';
+import LeisureTraining from './components/websites/LeisureTraining';
+import ColinMaher from './components/websites/ColinMaher';
 
 const App: React.FC = () => {
   const navigate = useNavigate();
@@ -105,6 +107,8 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/websites/elegant-john" element={<ElegantJohn />} />
+          <Route path="/websites/leisure-training" element={<LeisureTraining />} />
+          <Route path="/websites/colin-maher" element={<ColinMaher />} />
         </Routes>
       </main>
       <Footer />
