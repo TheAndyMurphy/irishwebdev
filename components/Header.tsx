@@ -57,6 +57,7 @@ const Header: React.FC = ({
   }> = ({ onClick, children, link }) => (
     <a
       href={link}
+      onClick={()=>setIsMobileMenuOpen(false)}
       className="relative group text-4xl font-bold text-white hover:text-sky-400 transition-colors pb-2"
     >
       <span className="relative z-10">{children}</span>
