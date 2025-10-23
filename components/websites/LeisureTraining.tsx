@@ -32,7 +32,7 @@ const LeisureTraining
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center">
         <div className="absolute inset-0">
           <img 
-            src="../assets/lti.webp"
+            src="/lti.webp"
             alt="Modern corporate office with computers"
             className="w-full h-full object-cover"
           />

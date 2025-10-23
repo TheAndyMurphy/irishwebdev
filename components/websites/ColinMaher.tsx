@@ -32,7 +32,7 @@ const ColinMaher
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center">
         <div className="absolute inset-0">
           <img 
-            src="../assets/cmd.webp"
+            src="/cmd.webp"
             alt="Modern corporate office with computers"
             className="w-full h-full object-cover"
           />

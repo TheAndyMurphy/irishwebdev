@@ -31,7 +31,7 @@ const ElegantJohn: React.FC = () => {
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center">
         <div className="absolute inset-0">
           <img 
-            src="../assets/ej.avif"
+            src="/ej.avif"
             alt="Modern corporate office with computers"
             className="w-full h-full object-cover"
           />

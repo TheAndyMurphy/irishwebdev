@@ -27,9 +27,9 @@ const WebsiteItem: React.FC<WebsiteItemProps> = ({ imageUrl, category, title, on
 );
 
 const websitesData = [
-  { id: 'elegant-john', imageUrl: '../assets/ej.avif', category: 'Website & Marketing', title: 'Elegant John Bathrooms' },
-  { id: 'leisure-training', imageUrl: '../assets/lti.webp', category: 'Website & Marketing', title: 'Leisure Training Ireland' },
-  { id: 'colin-maher', imageUrl: '../assets/cmd.webp', category: 'Website & Marketing', title: 'Colin Maher Design' },
+  { id: 'elegant-john', imageUrl: '/ej.avif', category: 'Website & Marketing', title: 'Elegant John Bathrooms' },
+  { id: 'leisure-training', imageUrl: '/lti.webp', category: 'Website & Marketing', title: 'Leisure Training Ireland' },
+  { id: 'colin-maher', imageUrl: '/cmd.webp', category: 'Website & Marketing', title: 'Colin Maher Design' },
 ];
 
 const Websites: React.FC = () => {
