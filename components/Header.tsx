@@ -2,20 +2,10 @@ import React, { useState, useEffect } from "react";
 import { WebDevSVG, AnimatedMenuIcon } from "./ui/Icons";
 import { useNavigate } from "react-router-dom";
 
-interface HeaderProps {
-  onServicesClick: () => void;
-  onPortfolioClick: () => void;
-  onPricingClick: () => void;
-  onFaqClick: () => void;
-  onContactClick: () => void;
-}
 
-const Header: React.FC<HeaderProps> = ({
-  onServicesClick,
-  onPortfolioClick,
-  onPricingClick,
-  onFaqClick,
-  onContactClick,
+
+const Header: React.FC = ({
+
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -46,11 +36,13 @@ const Header: React.FC<HeaderProps> = ({
   };
 
   const NavLink: React.FC<{
-    onClick: () => void;
+    onClick?: () => void;
+    link: string;
     children: React.ReactNode;
-  }> = ({ onClick, children }) => (
+  }> = ({ onClick, children, link }) => (
     <a
       onClick={onClick}
+      href={link}
       className="relative group cursor-pointer text-gray-300 hover:text-white transition-colors duration-300 py-2 font-bold"
     >
       <span className="relative z-10">{children}</span>
@@ -59,11 +51,12 @@ const Header: React.FC<HeaderProps> = ({
   );
 
   const MobileNavLink: React.FC<{
-    onClick: () => void;
+    onClick?: () => void;
+    link:string;
     children: React.ReactNode;
-  }> = ({ onClick, children }) => (
+  }> = ({ onClick, children, link }) => (
     <a
-      onClick={() => handleMobileLinkClick(onClick)}
+      href={link}
       className="relative group text-4xl font-bold text-white hover:text-sky-400 transition-colors pb-2"
     >
       <span className="relative z-10">{children}</span>
@@ -91,12 +84,12 @@ const Header: React.FC<HeaderProps> = ({
         </button>
 
         <div className="hidden md:flex items-center space-x-8">
-          <NavLink onClick={onServicesClick}>Services</NavLink>
-          <NavLink onClick={onPortfolioClick}>Portfolio</NavLink>
-          <NavLink onClick={onPricingClick}>Pricing</NavLink>
-          <NavLink onClick={onFaqClick}>FAQs</NavLink>
+          <NavLink link="#services">Services</NavLink>
+          <NavLink link="#portfolio">Portfolio</NavLink>
+          <NavLink link="#pricing">Pricing</NavLink>
+          <NavLink link="#faqs">FAQs</NavLink>
           <a
-            onClick={onContactClick}
+            href="#contact"
             className="cursor-pointer bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
           >
             Get Started
@@ -127,12 +120,12 @@ const Header: React.FC<HeaderProps> = ({
           className="flex flex-col items-center justify-center space-y-10 w-full"
           style={{ height: "calc(100vh - 4.5rem)" }}
         >
-          <MobileNavLink onClick={onServicesClick}>Services</MobileNavLink>
-          <MobileNavLink onClick={onPortfolioClick}>Portfolio</MobileNavLink>
-          <MobileNavLink onClick={onPricingClick}>Pricing</MobileNavLink>
-          <MobileNavLink onClick={onFaqClick}>FAQs</MobileNavLink>
+          <MobileNavLink link="#services">Services</MobileNavLink>
+          <MobileNavLink link="#portfolio">Portfolio</MobileNavLink>
+          <MobileNavLink link="#pricing">Pricing</MobileNavLink>
+          <MobileNavLink link="#faqs">FAQs</MobileNavLink>
           <a
-            onClick={() => handleMobileLinkClick(onContactClick)}
+            href="#contact"
             className="mt-4 text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-blue-500 hover:opacity-80 transition-opacity"
           >
             Contact Us

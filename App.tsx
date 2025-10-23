@@ -72,23 +72,23 @@ const App: React.FC = () => {
       <div>
         <Reviews />
       </div>
-      <div ref={servicesRef}>
+      <div ref={servicesRef} id="services">
         <Services />
       </div>
       <div>
         <About />
       </div>
     
-      <div ref={portfolioRef}>
+      <div ref={portfolioRef} id="portfolio">
         <Websites />
       </div>
-      <div ref={pricingRef}>
+      <div ref={pricingRef} id="pricing">
         <Pricing onContactClick={() => handleNavClick(contactRef)} />
       </div>
-      <div ref={faqRef}>
+      <div ref={faqRef} id="faqs">
         <Faq />
       </div>
-      <div ref={contactRef}>
+      <div ref={contactRef} id="contact">
         <Contact />
       </div>
     </>
@@ -97,11 +97,11 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-900">
       <Header
-        onServicesClick={() => handleNavClick(servicesRef)}
-        onPortfolioClick={() => handleNavClick(portfolioRef)}
-        onPricingClick={() => handleNavClick(pricingRef)}
-        onFaqClick={() => handleNavClick(faqRef)}
-        onContactClick={() => handleNavClick(contactRef)}
+        // onServicesClick={() => handleNavClick(servicesRef)}
+        // onPortfolioClick={() => handleNavClick(portfolioRef)}
+        // onPricingClick={() => handleNavClick(pricingRef)}
+        // onFaqClick={() => handleNavClick(faqRef)}
+        // onContactClick={() => handleNavClick(contactRef)}
       />
       <main>
         <Routes>
